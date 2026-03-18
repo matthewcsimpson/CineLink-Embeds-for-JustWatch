@@ -1,11 +1,11 @@
 === CineLink Embeds for JustWatch ===
-Contributors: posterboy81, matthewcsimpson
+Contributors: posterboy81
 Donate link: https://ko-fi.com/matthewsimpson
 Tags: justwatch, streaming, movies, tv, gutenberg
 Requires at least: 6.0
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -96,6 +96,9 @@ On plugin uninstall (delete), plugin options are cleaned up from the database.
 5. The widget rendered several different times. This does not represent all of the available customizations, just a taste of what's possible.
 
 == Changelog ==
+
+= 1.0.1 =
+* Add custom admin footer on settings page.
 
 = 1.0.0 =
 * First stable release.

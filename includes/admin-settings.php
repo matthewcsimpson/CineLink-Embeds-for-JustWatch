@@ -50,6 +50,14 @@ add_action('admin_menu', static function (): void {
     );
 });
 
+add_filter('admin_footer_text', static function (string $text): string {
+    $screen = get_current_screen();
+    if (!$screen || $screen->id !== 'toplevel_page_jw-widgets') {
+        return $text;
+    }
+    return 'CineLink Embeds for JustWatch, created by <a href="https://matthewcsimpson.dev/" target="_blank" rel="noopener">Matthew Simpson</a> &nbsp;&bull;&nbsp; <a href="https://ko-fi.com/matthewsimpson" target="_blank" rel="noopener">Buy me a coffee</a>';
+});
+
 add_action('admin_enqueue_scripts', static function (string $hook): void {
     if ($hook !== 'toplevel_page_jw-widgets') {
         return;
